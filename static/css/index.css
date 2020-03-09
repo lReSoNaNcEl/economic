@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {font-size: 100%;}
+
+body {font-family: IBM Plex Sans, sans-serif;}
+
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {max-width: 100%;}
+
+input,
+button,
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+input::-webkit-input-placeholder {color: inherit;}
+
+input::-webkit-inner-spin-button {display: none;} /*скрывает вертикальные стрелки при наличии атрибута type="date"*/
+input::-webkit-clear-button { display: none;}
+input::-webkit-calendar-picker-indicator {
+    opacity: .01;
+    width: 2rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    left: 1.5625rem;
+}
+
+select {
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none; /*скрывает индикатор выпадающего списка*/
+}
+
+.hidden {opacity: 0;}
+
+.btn {
+    width: 25rem;
+    height: 3.125rem;
+    background-color: #F1795F;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #434656;
+}
+
+.btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #DADADA;
+    font-size: 1.125rem;
+    color: #898989;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+
+/*** Media Queries ***/
+
+
+@media only screen and (max-width: 1600px) {
+    html {font-size: 87%}
+}
+
+@media only screen and (max-width: 1366px) {
+    html {font-size: 80%}
+}
+
+@media only screen and (max-width: 1280px) {
+    html {font-size: 76%}
+}
+
+@media only screen and (max-width: 1192px) {
+    html {font-size: 70%}
+}
+
+@media only screen and (max-width: 992px) {
+    html {font-size: 60%}
+}
+
+@media only screen and (max-width: 768px) {
+    html {font-size: 50%}
+}
